@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/Top_Layout" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:gravity="center_horizontal" android:background="#ffffff" android:fadeScrollbars="false">
+
+	<TableLayout android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:id="@+id/Label_Table"
+		android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_margin="1dp" android:background="#000000">
+		<TableRow android:id="@+id/Label1_Row" style="@style/table_row_center">
+			<TableRow android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/column_basic_label"
+				style="@style/table_column">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" style="@style/Textview"
+					android:id="@+id/Label1_Text" android:text="@string/mode_text" />
+
+			</TableRow>
+			<TableRow android:layout_width="wrap_content"
+				android:layout_height="wrap_content" style="@style/table_column"
+				android:id="@+id/column_basic_label2">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text=""
+					style="@style/Textview" android:id="@+id/Label1_Value_Text" />
+			</TableRow>
+		</TableRow>
+	<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Header_Table">
+				<TableRow android:id="@+id/headerrow" style="@style/table_row_center">
+					<TableRow style="@style/table_column" android:id="@+id/column_bond_header">
+						<TextView android:id="@+id/bond_label_text" style="@style/Textview" />
+						<TextView android:text="@string/par_comment_text" style="@style/Textview" android:id="@+id/selling_comment_text" />
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/table_column" android:id="@+id/column_par_message">
+						<TextView style="@style/Textview" android:id="@+id/atpartext" android:minEms="2" />
+					</TableRow>
+				</TableRow>
+			</TableLayout><TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Currency_Table" android:stretchColumns="0">
+				<TableRow android:id="@+id/CurrencyRow" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_local_currency">
+						<TextView android:id="@+id/LocalCurrency" android:text="@string/local_currency_text" style="@style/Textview" />
+						<TextView android:id="@+id/LCSymbol" android:text="@string/local_currency_symbol" style="@style/CurrencySymbol" />
+					</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_current_currency">
+						<TextView android:id="@+id/BondCurrency" android:text="@string/bond_currency_text" style="@style/Textview" />
+						<Spinner android:scrollbars="vertical" android:id="@+id/CurrencyType" android:visibility="visible" android:clickable="true" android:fitsSystemWindows="true" android:nextFocusDown="@+id/CurrencyType" android:clipToPadding="true" android:nextFocusUp="@+id/CurrencyType" android:focusableInTouchMode="true" android:focusable="true" android:scrollbarAlwaysDrawVerticalTrack="true" android:fadeScrollbars="false" android:prompt="@string/change_currency_text" android:layout_gravity="right|center_vertical" android:layout_width="wrap_content" style="@style/CurrencyList"/>
+					</TableRow>
+				</TableRow>
+			</TableLayout></TableLayout>
+	<ScrollView android:id="@+id/Primary_Scroll"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_below="@+id/Label_Table" android:layout_above="@+id/Button_Table" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarFadeDuration="-1" android:layout_margin="1dp" android:background="#000000">
+		<TableLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/Scroll_Table">
+			
+			
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Par_Table"
+				android:stretchColumns="0">
+				<TableRow android:layout_height="wrap_content" android:id="@+id/parandfacerow"
+					style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_par_value">
+						<TextView android:id="@+id/partext" android:text="@string/par_text"
+							style="@style/Textview" />
+						<EditText android:layout_width="wrap_content" android:id="@+id/parvalue"
+							style="@style/short_input_number" />
+					</TableRow>
+					<TableRow android:layout_width="wrap_content"
+						android:layout_height="wrap_content" style="@style/table_column"
+						android:id="@+id/column_face_value">
+						<TextView android:id="@+id/facetext" android:text="@string/face_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/facevalue" style="@style/input_number" />
+					</TableRow>
+				</TableRow>
+			</TableLayout>
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Price_Table"
+				android:stretchColumns="0">
+				<TableRow android:id="@+id/pricerow" android:layout_height="wrap_content"
+					android:orientation="horizontal" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_price">
+						<TextView android:id="@+id/pricetext" android:text="@string/price_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/pricevalue"
+							android:layout_width="wrap_content" style="@style/input_number" />
+					</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/periods">
+						<TextView style="@style/Textview" android:text="@string/payment_periods_text"
+							android:id="@+id/payment_periods_text" />
+						<EditText android:id="@+id/payment_periods_value" style="@style/short_input_integer" />
+					</TableRow>
+				</TableRow>
+			</TableLayout>
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Time_Table"
+				android:stretchColumns="0">
+				<TableRow android:id="@+id/timerow" android:layout_height="wrap_content"
+					android:orientation="horizontal" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_time_left">
+						<TextView android:id="@+id/timetext" android:text="@string/time_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/timevalue"
+							android:layout_width="wrap_content" android:inputType="numberDecimal"
+							style="@style/shortest_input_number" />
+						<TextView android:id="@+id/yearstext01" style="@style/Textview"
+							android:text="@string/years_text" />
+					</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_bond_length">
+						<TextView android:text="@string/bond_length_text"
+							android:id="@+id/bond_length_text" style="@style/Textview" />
+						<EditText android:id="@+id/bond_length_value" style="@style/shortest_input_number" />
+						<TextView android:id="@+id/yearstext2" style="@style/Textview"
+							android:text="@string/years_text" />
+					</TableRow>
+				</TableRow>
+			</TableLayout>
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Rate_Table"
+				android:stretchColumns="0">
+				<TableRow android:id="@+id/raterow" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_rate">
+						<TextView android:id="@+id/ratetext" android:text="@string/rate_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/ratevalue" style="@style/short_input_number" android:digits="@string/allowed_digits_percent"/>
+						</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_periodic_rate">
+						<TextView android:id="@+id/periodicratetext" style="@style/Textview"
+							android:text="@string/periodic_rate_text" />
+						<EditText android:id="@+id/periodicratevalue" style="@style/short_input_number" android:digits="@string/allowed_digits_percent"/>
+						</TableRow>
+				</TableRow>
+			</TableLayout>
+			
+			<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Coupon_Table" android:stretchColumns="0">
+				<TableRow android:id="@+id/couponrow" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_coupon_rate">
+						<TextView android:id="@+id/coupontext" android:text="@string/coupon_text" style="@style/Textview" />
+						<EditText android:id="@+id/couponvalue" style="@style/input_number" />
+					</TableRow>
+					<TableRow android:id="@+id/TableRow01" style="@style/table_column" />
+				</TableRow>
+			</TableLayout><TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Yield_Table"
+				android:stretchColumns="0">
+				<TableRow android:id="@+id/yieldrow" android:layout_height="wrap_content"
+					android:orientation="horizontal" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_yield_maturity">
+						<TextView android:id="@+id/yieldtext" android:text="@string/yield_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/yieldvalue"
+							android:layout_width="wrap_content" android:inputType="numberDecimal"
+							style="@style/short_input_number" android:digits="@string/allowed_digits_percent"/>
+						</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_yield_call">
+						<TextView android:id="@+id/yield_to_call_text" style="@style/Textview"
+							android:text="@string/yield_to_call_text" />
+						<EditText style="@style/short_input_number" android:id="@+id/yield_to_call_value" android:digits="@string/allowed_digits_percent"/>
+						</TableRow>
+				</TableRow>
+			</TableLayout>
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Duration_Table"
+				android:stretchColumns="0">
+				<TableRow android:id="@+id/durationrow" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_duration">
+						<TextView android:id="@+id/durationtext" android:text="@string/duration_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/durationvalue" style="@style/short_input_number" />
+					</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_m_duration">
+						<TextView style="@style/Textview" android:text="@string/m_duration_text"
+							android:id="@+id/m_duration_text" />
+						<EditText style="@style/short_input_number" android:id="@+id/m_duration_value" />
+					</TableRow>
+				</TableRow>
+			</TableLayout>
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/RFDV_Table"
+				android:stretchColumns="0">
+				<TableRow android:id="@+id/rfraterow" style="@style/table_row">
+					<TableRow style="@style/table_column" android:id="@+id/column_rf_rate">
+						<TextView android:id="@+id/rfratetext" android:text="@string/r_f_rate_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/rfratevalue" style="@style/short_input_number" android:digits='"0123456789.%-"'/>
+						</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_dv01">
+						<TextView android:id="@+id/dv01text" android:text="@string/dv01_text"
+							style="@style/Textview" />
+						<EditText android:id="@+id/dv01value" style="@style/short_input_number" />
+					</TableRow>
+				</TableRow>
+			</TableLayout>
+			
+		</TableLayout>
+	</ScrollView><TableLayout android:layout_height="wrap_content" android:id="@+id/Button_Table" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_margin="1dp" android:background="#000000" android:layout_width="match_parent">
+				<TableRow android:id="@+id/Button_Row" style="@style/table_row_center">
+					<TableRow android:layout_width="wrap_content" style="@style/table_column" android:layout_height="match_parent" android:id="@+id/column_calculate_button">
+						<Button android:layout_width="wrap_content" android:text="@string/calculate_text" android:id="@+id/calculate_button" android:textSize="12sp" android:layout_height="match_parent" />
+					</TableRow>
+					<TableRow style="@style/table_column" android:id="@+id/column_radio_selection">
+						<RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_vertical" android:id="@+id/Calculate_Selection">
+							<RadioButton android:layout_width="wrap_content" android:textAppearance="@style/Textview" android:button="@drawable/radiobutton" android:layout_height="16dp" android:id="@+id/Radio_Price" android:text="@string/price_text"/><RadioButton android:layout_width="wrap_content" android:text="@string/rate_text" android:textAppearance="@style/Textview" android:gravity="center_vertical" android:id="@+id/Radio_Rate" android:button="@drawable/radiobutton" android:layout_height="16dp" />
+							
+							<RadioButton android:layout_width="wrap_content" android:text="@string/yield_text" android:textAppearance="@style/Textview" android:id="@+id/Radio_Yield" android:button="@drawable/radiobutton" android:layout_height="16dp" />
+							<RadioButton android:layout_width="wrap_content" android:textAppearance="@style/Textview" android:id="@+id/Radio_Duration" android:button="@drawable/radiobutton" android:layout_height="16dp" android:text="@string/dduration_text"/>
+							<RadioButton android:layout_width="wrap_content" android:text="@string/dv01_text" android:textAppearance="@style/Textview" android:id="@+id/Radio_DV01" android:button="@drawable/radiobutton" android:layout_height="16dp" />
+						</RadioGroup>
+					</TableRow>
+					<TableRow android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/table_column" android:id="@+id/column_coupon_button">
+						<Button android:layout_width="wrap_content" android:text="@string/show_coupons_text" android:textSize="12sp" android:layout_height="match_parent" android:id="@+id/CouponButton" />
+					</TableRow>
+				</TableRow>
+			</TableLayout>
+	
+</RelativeLayout>

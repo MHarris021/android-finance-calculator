@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string-array name="locales">
+		<item>USD</item>
+		<item>Yen</item>
+		<item>Yuan</item>
+		<item>Euro</item>
+		<item>Pound</item>
+	</string-array>
+	<string-array name="formatted_locales">
+		<item>0</item>
+	</string-array>
+	<string-array name="menu_items">
+		<item>Standard</item>
+		<item>Advanced</item>
+		<item>Yield and Duration</item>
+		<item>Rates and Coupons</item>
+		<item>Calculate DV01</item>
+		<item>Preferences</item>
+	</string-array>
+	<string-array name="menu_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+	<string-array name="starting_mode_items">
+		<item>Standard</item>
+		<item>Advanced</item>
+		<item>Yield and Duration</item>
+		<item>Rates and Coupons</item>
+		<item>Calculate DV01</item>
+	</string-array>
+	<string-array name="starting_mode_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	<string-array name="ParStrings">
+		<item>No Par Value</item>
+		<item>Par</item>
+		<item>a Premium</item>
+		<item>a Discount</item>
+	</string-array>
+	<string-array name="Compounding_Type">
+		<item>Continuous</item>
+		<item>Simple</item>
+		<item>Compound</item>
+	</string-array>
+	<string-array name="Compounding_Values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="Yield_Change_Type">
+		<item>Calculate Price</item>
+		<item>Calculate Rate</item>
+	</string-array>
+	<string-array name="Yield_Change_Values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="Days_in_year_text">
+		<item>Actual</item>
+		<item>360</item>
+	</string-array>
+	<string-array name="Days_in_year_values">
+		<item>365</item>
+		<item>360</item>
+	</string-array>
+</resources>

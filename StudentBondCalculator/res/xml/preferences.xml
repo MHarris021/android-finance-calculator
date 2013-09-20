@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Display Options">
+		<ListPreference android:title="Starting Mode"
+			android:defaultValue="0" android:key="@string/pref_mode_start" android:entryValues="@array/starting_mode_values" android:entries="@array/starting_mode_items">
+		</ListPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Calculation Options">
+		<CheckBoxPreference android:key="@string/pref_auto_calculate"
+			android:defaultValue="true" android:title="Auto Calculate Changes"></CheckBoxPreference>
+		
+		
+		
+	
+
+<ListPreference android:title="On Yield Change" android:key="@string/pref_yield_change" android:entryValues="@array/Yield_Change_Values" android:entries="@array/Yield_Change_Type" android:defaultValue="0"></ListPreference>
+</PreferenceCategory>
+<PreferenceScreen android:title="Default Bond Settings">
+<EditTextPreference android:key="@string/pref_default_face_value" android:title="Default Face Value" android:defaultValue="@string/default_face_value"></EditTextPreference><EditTextPreference android:key="@string/pref_default_length" android:defaultValue="@string/default_length" android:title="Default Length"></EditTextPreference>
+<EditTextPreference android:key="@string/pref_default_periods" android:defaultValue="@string/default_periods" android:title="Default Periods"></EditTextPreference>
+<EditTextPreference android:key="@string/pref_default_rate" android:defaultValue="@string/default_rate" android:title="Default Rate"></EditTextPreference><EditTextPreference android:key="@string/pref_default_rf_rate" android:title="Default RF Rate" android:defaultValue="@string/default_rf_rate"></EditTextPreference>
+
+</PreferenceScreen>
+</PreferenceScreen>

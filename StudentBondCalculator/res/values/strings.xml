@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Student Bond Calculator</string>
+	<string name="allowed_digits_percent">0123456789.%</string>
+	<string name="allowed_digits_currency">0123456789.$,</string>
+	<string name="pref_mode_start">Pref_MODE_START</string>
+	<string name="pref_yield_change">Pref_Yield_Change</string>
+	<string name="pref_days_in_year">Pref_DAYS_IN_YEAR</string>
+	<string name="pref_compounding_type">Pref_Compounding_Type</string>
+	<string name="pref_default_change_compounding">Default_Change_Compounding_Type</string>
+	<string name="pref_default_use_days">Default_Use_Days_In_Year</string>
+	<string name="pref_auto_calculate">Pref_Auto_Calculate</string>
+	<string name="pref_default_face_value">Default_Face_Value</string>
+	<string name="pref_default_length">Default_Length</string>
+	<string name="pref_default_periods">Default_Periods</string>
+	<string name="pref_default_rate">Default_Rate</string>
+	<string name="pref_default_rf_rate">Default_RF_Rate</string>
+	<string name="default_face_value">$1000</string>
+	<string name="default_length">10</string>
+	<string name="default_periods">2</string>
+	<string name="default_rate">5.00%</string>
+	<string name="default_rf_rate">3.00%</string>
+	
+    
+   
+    <string name="mode_text">Current Mode is:</string>
+    
+    
+    
+    <string name="coupon_table_label_text">Coupon Table</string>
+    <string name="show_coupons_text">Show Coupons</string>
+    <string name="local_currency_text">Local Currency</string>
+    <string name="bond_currency_text">Bond Currency</string>
+    <string name="local_currency_symbol">$</string>
+    <string name="change_currency_text">Change Currency</string>
+    <string name="bond_type_text">Bond Type</string>
+    <string name="par_text">Par Value</string>
+    <string name="face_text">Face Value</string>
+    <string name="price_text">Price</string>
+    <string name="payment_periods_text">Periods/Year</string>
+    <string name="rate_text">Rate</string>
+    <string name="periodic_rate_text">Periodic Rate</string>
+    <string name="time_text">Time Left</string>
+    <string name="bond_length_text">Bond Length</string>
+    <string name="years_text">years</string>
+    <string name="coupon_text">Coupon Rate</string>
+    <string name="yield_text">Yield</string>
+    <string name="yield_to_call_text">Yield to Call</string>
+    <string name="duration_text">Mc Dur</string>
+    <string name="dduration_text">Duration</string>
+    <string name="m_duration_text">Mod Dur</string>
+    <string name="r_f_rate_text">R F Rate</string>
+    <string name="dv01_text">DV01</string>
+    <string name="calculate_text">Calculate</string>
+        
+    <string name="par_comment_text">is selling at</string>
+
+
+</resources>
